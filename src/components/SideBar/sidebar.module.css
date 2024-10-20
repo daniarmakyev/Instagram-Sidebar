@@ -1,29 +1,51 @@
 .sidebar {
     height: 100vh;
     border-right: 0.1px solid rgb(54, 54, 54);
-    max-width: 20%;
+    max-width: 300px;
     width: 100%;
     position: fixed;
 }
 
+.logo {
+    margin-left: 30px;
+    
+}
+
 .navList {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    align-items: start;
+    align-self: center;
 }
 
 .navList li {
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 80px;
     padding-top: 10px;
     padding-bottom: 10px;
-}
 
+}
 .navList li a {
     text-decoration: none;
-    color: #fff;
-    display: inline-block;
-    font-size: 22px;
+    display: flex;
+    flex-wrap: nowrap;
+    text-decoration: none;
 }
 
+.link {
+    color: #c9c4c4;
+    font-size: 22px;
+  }
+  
+  .active {
+    font-size: 20px; 
+    color: #fff;
+  }
 .navList li svg {
-    margin-right: 30px;
+    margin-right: 10px;
+    align-self: center;
+    min-width: 26px;
+    max-width: 26px;
 }
